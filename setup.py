@@ -8,7 +8,7 @@ README = (HERE.joinpath("readme.md")).read_text()
 
 setup(
     name="mkdocs-suppress-logs-plugin",
-    version="0.1.0",
+    version="0.1.1",
     packages=["mkdocs_suppress_logs_plugin"],
     url="https://github.com/darrelk/mkdocs-suppress-logs-plugin",
     license="MIT",
@@ -22,4 +22,6 @@ setup(
             "suppress_logs = mkdocs_suppress_logs_plugin:SuppressLogsPlugin"
         ]
     },
+    install_requires=["mkdocs>=1.1"],
+    python_requires='>=3.7',
 )
